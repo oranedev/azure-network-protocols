@@ -25,10 +25,16 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 <h2>High-Level Steps</h2>
 
-- Step 1
-- Step 2
-- Step 3
-- Step 4
+- Create an Azure virtual machine and configure the networking settings, including the Virtual Network and Subnet. Ensure that you allow inbound traffic to the virtual machine for the port number used by Wireshark (default is 5060).
+- Enable RDP to connect to the VM and download Wireshark on the VM.
+- Install Wireshark on the virtual machine and launch it.
+- To capture network traffic, select the network interface and click on the "Capture" button. You can then start capturing packets and analyze the network traffic.
+- To create a Network Security Group, navigate to the Azure Portal and select the virtual network that the virtual machine is connected to.
+- In the virtual network settings, select "Network Security Group" and create a new NSG.
+- Add inbound and outbound rules to the NSG to restrict the network traffic to and from the virtual machine. For example, you can create an inbound rule to allow traffic only from specific IP addresses and a outbound rule to restrict traffic to certain ports.
+- Assign the NSG to the virtual machine's network interface.
+- Test the NSG rules by attempting to access the virtual machine from a different IP address or by attempting to access restricted ports.
+- Analyze the captured traffic to troubleshoot network issues or monitor network activity.
 
 <h2>Actions and Observations</h2>
 
