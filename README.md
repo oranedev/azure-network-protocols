@@ -28,6 +28,10 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 - To capture network traffic, select the network interface and click on the "Capture" button. You can then start capturing packets and analyze the network traffic.
 - To create a Network Security Group, navigate to the Azure Portal and select the virtual network that the virtual machine is connected to.
 - In the virtual network settings, select "Network Security Group" and create a new NSG.
+ <p>
+<img src="https://learn.microsoft.com/en-us/azure/virtual-network/media/tutorial-filter-network-traffic/add-inbound-rule.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
 - Add inbound and outbound rules to the NSG to restrict the network traffic to and from the virtual machine. For example, you can create an inbound rule to allow traffic only from specific IP addresses and a outbound rule to restrict traffic to certain ports.
 - Assign the NSG to the virtual machine's network interface.
 - Test the NSG rules by attempting to access the virtual machine from a different IP address or by attempting to access restricted ports.
